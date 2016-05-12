@@ -1,0 +1,91 @@
+$light: #F5F5F5;
+$med: #ccc;
+$dark: #3A3A3A;
+$red: #B50000;
+
+
+//HEADER
+
+header{
+  background: #fff;
+  padding: 10px;
+
+  .utlimg {
+    margin: 0px 0 0 0 ;
+  }
+  .search {
+    margin-top: 5px !important;
+    padding: 5px;
+    width: 20%;
+    border: 2px solid #8B8B8B;
+  }
+  .goSearch {
+    margin-top: 7px;
+    margin-left: 5px;
+  }
+
+  .logo{
+    font-size: 33px;
+    font-weight: 300;
+  }
+
+  .utl {
+
+    margin-top: 10px;
+
+    a{
+      margin-right: 15px;
+      color: #000;
+    }
+    .fa-circle {
+      font-size: 33px;
+      margin-top: -7px;
+    }
+  }
+}
+
+ul.navigation {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: #000 !important;
+  background: #4B4B4B;
+
+  li{
+    display: inline-block;
+    margin: 0 0px 0 10px;
+    padding: 10px;
+    color: #fff;
+
+  }
+
+  a{
+    color: #fff;
+  }
+
+  li.selected {
+    background: #ccc;
+    border-top: 4px solid $med;
+    
+    a{
+      color: #000;
+    }
+  }
+
+}
+
+.hero {
+  padding: 30px;
+  background: #ccc !important;
+}
+
+//OVERRIDES
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+
+

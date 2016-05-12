@@ -1,0 +1,36 @@
+{
+  "name": "app",
+  "main": "index.js",
+  "authors": [
+    "Dana <dana.martinelli@bnymellon.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/danaia/grs",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "PACE": "pace#~1.0.2",
+    "bootcards": "~1.1.2",
+    "bootstrap": "~3.3.6",
+    "bootstrap-growl": "~1.1.0",
+    "datatables": "~1.10.10",
+    "gridster": "~0.5.6",
+    "highcharts": "~4.1.10",
+    "multiselect": "~0.9.12",
+    "slidereveal": "~1.0.1",
+    "twitter-bootstrap-wizard": "~1.0.0",
+    "typeahead.js": "~0.11.1",
+    "angular-ui-grid": "~3.0.7",
+    "sparklines": "~1.0.0",
+    "fuzzyDropdown": "~1.0.0",
+    "tipso": "~1.0.8"
+  },
+  "version": "0.0.0",
+  "description": "",
+  "moduleType": []
+}
