@@ -3,89 +3,152 @@ $med: #ccc;
 $dark: #3A3A3A;
 $red: #B50000;
 
-
-//HEADER
-
-header{
-  background: #fff;
-  padding: 10px;
-
-  .utlimg {
-    margin: 0px 0 0 0 ;
-  }
-  .search {
-    margin-top: 5px !important;
-    padding: 5px;
-    width: 20%;
-    border: 2px solid #8B8B8B;
-  }
-  .goSearch {
-    margin-top: 7px;
-    margin-left: 5px;
-  }
-
-  .logo{
-    font-size: 33px;
-    font-weight: 300;
-  }
-
-  .utl {
-
-    margin-top: 10px;
-
-    a{
-      margin-right: 15px;
-      color: #000;
-    }
-    .fa-circle {
-      font-size: 33px;
-      margin-top: -7px;
-    }
-  }
+body, html {
+    height: 100%;
+    font-size: 16px;
 }
 
-ul.navigation {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  color: #000 !important;
-  background: #4B4B4B;
-
-  li{
-    display: inline-block;
-    margin: 0 0px 0 10px;
-    padding: 10px;
-    color: #fff;
-
-  }
-
-  a{
-    color: #fff;
-  }
-
-  li.selected {
-    background: #ccc;
-    border-top: 4px solid $med;
-    
-    a{
-      color: #000;
-    }
-  }
-
+.navbar {
+    margin-top: 15px;
 }
+
 
 .hero {
-  padding: 30px;
-  background: #ccc !important;
+    padding: 20px;
+    background-image: url("/img/woman.jpg");
+    background-size: cover;
+
+    background-position: center center;
+    height: 400px;
+
+    .introText {
+        margin: 20px;
+        width: 70%;
+    }
+
+    h1{
+        font-size: 5em;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+    }
+    .introSearchLaw {
+        padding: 20px 20px 0 20px;
+        input[type="text"]{
+            padding: 7px 7px 7px 12px;
+            font-size: 1.3em;
+            font-weight: 300;
+        }
+
+        .btn{
+            margin: -10px 0 0 20px;
+            background: #000;
+            border: none
+        }
+    }
+
+}
+
+.sec2Home {
+    padding: 20px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+
+    h2{
+        font-size: 2em;
+    }
+
+    small{
+        font-size: 1.3em;
+        margin: -5px 0 0 0;
+        display: block;
+    }
+
+    .elaResources {
+        margin: 25px 0 0 0 ; 
+
+        ul{
+
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            li{
+                margin-bottom: 5px;
+                a {
+                    color: #8C8A8A;
+                    font-weight: 500;
+
+                    &:hover{
+                        color: #000;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#slider {
+    background: #444444;
+
+    ul{
+        margin: 10px 0 0 0;
+        padding: 10px;
+        list-style: none;
+
+        li{
+            padding: 10px 0 10px 20px;
+
+            a{
+                color: #fff;
+            }
+            
+            &:hover{
+                background: #000;
+                text-decoration: none;
+            }
+        }
+    }
 }
 
 //OVERRIDES
-.container {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: 0;
-    margin-left: 0;
+
+
+.navbar-default {
+    background-color: #fff;
+    border-color: #fff;
 }
 
+.navbar-brand {
+    img{
+        height: 90%;
+    }
+}
 
+a.slideR {
+    font-size: 1.2em;
+
+    .fa-bars {
+        margin-right: 3px;
+    }
+}
+
+@media (max-width: 780px) {
+
+    .hero {
+
+        h1{
+            font-size: 3em ;
+        }
+
+        input[type="text"] {
+            width: 100%;
+        }
+
+        .btn{
+            display: block;
+            margin: 15px 0 0 0!important;
+        }
+    }
+}
 
