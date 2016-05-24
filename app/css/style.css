@@ -1,3 +1,6 @@
+.btn-primary, .label {
+  background: #3D3D3D !important; }
+
 body, html {
   height: 100%;
   font-size: 16px;
@@ -9,9 +12,14 @@ body, html {
     border: 2px solid #4B4B4B;
     width: 100%; }
 
+.closeit a {
+  margin: 15px 15px 0px 15px !important;
+  display: block;
+  color: #fff; }
+
 .hero {
   padding: 20px;
-  background-image: url("/img/woman.jpg");
+  background-image: url("../img/woman.jpg");
   background-size: cover;
   background-position: center center;
   height: 400px; }
@@ -78,7 +86,10 @@ body, html {
     .sec2Home .popularQuestions small {
       font-size: 1em;
       margin: 0 0 10px 0;
-      display: block; }
+      display: inline-block; }
+    .sec2Home .popularQuestions .label {
+      background: #000;
+      padding: 5px 10px 5px 10px; }
     .sec2Home .popularQuestions h3 {
       margin: 0; }
     .sec2Home .popularQuestions p {
@@ -404,3 +415,39 @@ input.empty {
 .btn-primary {
   background: #000;
   border: none; }
+
+.tipso a {
+  color: red !important; }
+
+.modal.in .modal-dialog {
+  width: 80%; }
+  .modal.in .modal-dialog .phone {
+    font-size: 1.3em;
+    margin: 10px 0 0 0; }
+  .modal.in .modal-dialog h3 {
+    margin: 0 0 10px 0; }
+  .modal.in .modal-dialog .starme {
+    margin: 0 0 10px 0; }
+  .modal.in .modal-dialog .btn {
+    margin-top: 22px; }
+  .modal.in .modal-dialog textarea {
+    border: none;
+    margin: 10px;
+    width: 100%; }
+  .modal.in .modal-dialog .bioPic {
+    text-align: center; }
+    .modal.in .modal-dialog .bioPic img {
+      width: 200px;
+      border: 1px solid #ccc;
+      margin: auto; }
+
+#myModal .modal-body form {
+  display: block;
+  max-width: 100%;
+  margin: 0; }
+
+.bioForm {
+  padding: 0 15px 0 10px; }
+  .bioForm small {
+    font-weight: 500;
+    margin: 0 0 5px 0px; }

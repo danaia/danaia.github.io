@@ -3,6 +3,10 @@ $med: #ccc;
 $dark: #3A3A3A;
 $red: #B50000;
 
+.btn-primary, .label {
+    background: #3D3D3D !important;
+}
+
 body, html {
     height: 100%;
     font-size: 16px;
@@ -19,10 +23,16 @@ body, html {
     }
 }
 
+.closeit a{
+    margin: 15px 15px 0px 15px !important;
+    display: block;
+    color: #fff;
+}
+
 
 .hero {
     padding: 20px;
-    background-image: url("/img/woman.jpg");
+    background-image: url("../img/woman.jpg");
     background-size: cover;
 
     background-position: center center;
@@ -125,14 +135,17 @@ body, html {
         small{
             font-size: 1em;
             margin: 0 0 10px 0;
-            display: block;
+            display: inline-block;
         }
 
 
         margin-top: 30px;
 
 
-
+        .label {
+            background: #000;
+            padding: 5px 10px 5px 10px;
+        }
         h3{
             margin: 0;
         }
@@ -603,3 +616,63 @@ input.empty {
     background: #000;
     border: none;
 }
+
+.tipso{
+    a{
+        color: red !important;
+    }
+}
+
+.modal.in .modal-dialog {
+    width: 80%;
+
+    .phone{
+        font-size: 1.3em;
+        margin: 10px 0 0 0;
+    }
+
+    h3{
+        margin: 0 0 10px 0;
+    }
+
+    .starme {
+        margin: 0 0 10px 0;
+    }
+
+    .btn {
+        margin-top: 22px;
+    }
+    textarea {
+        border: none;
+        margin: 10px;
+        width: 100%;
+    }
+
+    .bioPic {
+        text-align: center;
+        img{
+            width: 200px;
+            border: 1px solid #ccc;
+            margin:  auto;
+        }
+    }
+
+
+}
+
+#myModal .modal-body form {
+    display: block;
+     max-width: 100%; 
+    margin: 0; 
+}
+
+.bioForm {
+    padding:  0 15px 0 10px;
+
+    small{
+        font-weight: 500;
+        margin: 0 0 5px 0px;
+    }
+}
+
+

@@ -43,12 +43,12 @@
                 </div>
                 <div class="col-md-4 localArtLawyers">
                     <small>LOCAL ELDER LAWYERS</small>
-                    <small class="tag"><b>Rhode Island</b> <a href="#" class="changeLocal"> How Do We Know This?</a></small>
+                    <small class="tag">Your Location:<b> Rhode Island</b> <a href="#" class="changeLocal top-left tipso_style tipso" data-tipso="This is a top-left"> Not your area?</a></small>
                     <small>Lawers are discovered based on your location and article content.</small>
                     <hr>
                     <div class="row lawlocal">
                         <div class="col-md-6">
-                            <img src="/img/lawman.png" alt="">
+                            <img src="img/lawman.png" alt="">
                         </div>
                         <div class="col-md-6 smallArt">
                             <h3>William Korning</h3>
@@ -58,7 +58,7 @@
                             <span class="fa fa-star"></span>
                             <span class="fa fa-star"></span>
                             <p>
-                            Over 30 years of professional <b>estate planning</b> experience. 
+                                Over 30 years of professional <b>estate planning</b> experience. 
                             </p>
                             <a href="#" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">Introduce Me</a>
                         </div>
@@ -114,38 +114,59 @@
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">Please Register</h4>
+            <h4 class="modal-title" id="myModalLabel">Meet William Korning</h4>
         </div>
         <div class="modal-body">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ex voluptatibus suscipit.
-            </p>
+
+
 
             <!-- Simple signup form optimized for mobile, with toggleable password masking -->
 
-            <form>
-              <div class="input">
-                <label for="full-name">Full Name</label>
-                <input type="text" id="full-name" name="full-name" autocorrect="off" autocapitalize="words" maxlength="32">
+            <div class="row">
+                <div class="col-md-3 bioPic">
+                    <img src="img/lawman.png" alt="">
+                </div>
+                <div class="col-md-3">
+                    <h3>Biography</h3>
+                    <div class="starme">
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                    <div class="clearfix"></div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quibusdam obcaecati, tempore nostrum laborum rem rerum.
+                    <div class="phone">855<a href="#" class='tipso2' data-tipso="This is a top-left">-xxx-xxxx</a></div>
+                    <div class="clearfix"></div>
+                    <a href="#" class="btn btn-primary btn-md">Learn More</a>
+
+                </div>
+                <div class="col-md-6 bioForm">
+                    <small>Enter some information and will forward your information.</small>
+                    <div class="clearfix"></div>
+                    <form>
+                      <div class="input">
+                        <label for="full-name">Full Name</label>
+                        <input type="text" id="full-name" name="full-name" autocorrect="off" autocapitalize="words" maxlength="32">
+                    </div>
+                    <div class="input">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" autocorrect="off" autocapitalize="off" maxlength="64">
+                    </div>
+                    <div class="input clearfix">
+                        <label for="password">What Would You Like To Say?</label>
+                        <textarea name="" id="" cols="30" rows="3"></textarea>
+                    </div>
+                    <a href="#" class="btn btn-primary btn-md">Introduce Me</a>
+                    <hr>
+                </form>
             </div>
-            <div class="input">
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" autocorrect="off" autocapitalize="off" maxlength="64">
-            </div>
-            <div class="input clearfix">
-                <label for="password">Password</label>
-                <input type="text" id="password" name="password" maxlength="12" autocorrect="off" autocapitalize="off">
-                <span class="toggle-mask">Hide</span>
-            </div>
-            <input type="submit" id="submit" name="submit" value="Create Account">
-        </form>
+        </div>
 
 
     </div>
-    <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-    </div>
+
 </div>
 </div>
 </div>
@@ -199,13 +220,36 @@
 
 
     $( document ).ready(function() {
-       $('#brandHeader').load('p-brandHeader.html');
+     $('#brandHeader').load('p-brandHeader.html');
+
+     $('.tipso2').tipso({
+        position: 'top',
+        background: '#000',
+        useTitle: false,
+        width: false,
+        maxWidth: 300,
+        tooltipHover: true,
+        content: function(){
+            return 'You can <a href="javascript:;">do somethihng</a> to get this number';
+        }
+    });
+
+     $('.tipso').tipso({
+        position: 'top',
+        background: '#000',
+        useTitle: false,
+        width: false,
+        maxWidth: 300,
+        tooltipHover: true,
+        content: function(){
+            return 'You can <a href="javascript:;">Change Location</a>';
+        }
+    });
 
 
 
 
 
-
-   });
+ });
 
 </script>
