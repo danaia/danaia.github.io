@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+    <head>
+        <title>ELA - POC</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <meta content="yes" name="apple-mobile-web-app-capable" />
+        <link href='https://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="bower_components/PACE/themes/blue/pace-theme-minimal.css">
+        <link rel="stylesheet" href="bower_components/tipso/src/tipso.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Lato:400,300,100,700,900' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body id="articleWrap">
+        <div class="container-fluid">
+            <div id="brandHeader"></div>
+            <div class="mainBody">
+                <div class="row articleBody">
+                    <div class="col-md-8">
+                        <h1>Why Plan Your Estate?</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet adipisci ipsa iste recusandae dignissimos dolorem pariatur placeat magni voluptates odio quibusdam atque, molestiae voluptate laboriosam architecto rerum, ad reiciendis ullam! vfdsvfds</p>
+                        <div class="btn-group"> 
+                            <button type="button" class="btn btn-default">dsadsadas</button>                             
+                            <button type="button" class="btn btn-default">Middle</button>
+                            <button type="button" class="btn btn-default">Right</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4 localArtLawyers">
+                        <small>LOCAL ELDER LAWYERS</small>
+                        <small class="tag">Your Location:<b> Rhode Island</b> <a href="#" class="changeLocal top-left tipso_style tipso" data-tipso="This is a top-left"> Not your area?</a></small>
+                        <small>Lawers are discovered based on your location and article content.</small>
+                        <hr>
+                        <div class="row lawlocal">
+                            <div class="col-md-6">
+                                <img src="img/lawman.png" alt="">
+                            </div>
+                            <div class="col-md-6 smallArt">
+                                <h3>William Korning</h3>
+                                <span>AVVO Rating: 10.0</span>
+                                <div class="phone">855
+                                    <a href="#" class='tipso2' data-tipso="This is a top-left">-xxx-xxxx</a>
+                                </div>
+                                <a href="#" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">Introduce Me</a>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row lawlocal">
+                            <div class="col-md-12">
+                                <h3>Patricia Kelly</h3>
+                                <span>AVVO Rating: 9.2</span>
+                                <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                                <a href="#" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">Introduce Me</a>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row lawlocal">
+                            <div class="col-md-12">
+                                <h3>David J Donnely</h3>
+                                <span>AVVO Rating: 8.8</span>
+                                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                                <a href="#" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">Introduce Me</a>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                FOOTER
+</footer>
+        </div>
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="bower_components/gridster/dist/jquery.gridster.with-extras.min.js"></script>
+        <script src="bower_components/multiselect/js/jquery.multi-select.js"></script>
+        <script src="bower_components/PACE/pace.min.js"></script>
+        <script src="bower_components/bootstrap-growl/jquery.bootstrap-growl.min.js"></script>
+        <script src="bower_components/twitter-bootstrap-wizard/jquery.bootstrap.wizard.min.js"></script>
+        <script src="bower_components/typeahead.js/dist/typeahead.jquery.min.js"></script>
+        <script src="bower_components/typeahead.js/dist/bloodhound.min.js"></script>
+        <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+        <script src="bower_components/slidereveal/dist/jquery.slidereveal.min.js"></script>
+        <script src='bower_components/tipso/src/tipso.min.js'></script>
+    </body>
+</html>
+<script>
+
+
+      (function () {
+        "use strict";
+  // toggle password masking
+  $('.toggle-mask').on('click', function () {
+    var maskToggle = $(this).text();
+    var password = $('#password').val();
+    if (maskToggle === 'Hide') {
+      $(this).text("Show");
+      $('#password').replaceWith('<input type="password" id="password" name="password" maxlength="12" autocorrect="off" autocapitalize="off" value=' + password + '>');
+    } else if (maskToggle === 'Show') {
+      $(this).text("Hide");
+      $('#password').replaceWith('<input type="text" id="password" name="password" maxlength="12" autocorrect="off" autocapitalize="off" value=' + password + '>');
+    }
+  });
+
+  // highlight row on focus
+  $('#full-name, #email, #password').focus(function () {
+    $(this).parent().addClass('active');
+  });
+  $('#full-name, #email, #password').focusout(function () {
+    $('.active').removeClass('active');
+  });
+});
+
+
+
+
+      $( document ).ready(function() {
+       $('#brandHeader').load('p-brandHeader.html');
+
+       $('.tipso2').tipso({
+        position: 'top',
+        background: '#000',
+        useTitle: false,
+        width: false,
+        maxWidth: 300,
+        tooltipHover: true,
+        content: function(){
+          return 'You can <a href="javascript:;">do somethihng</a> to get this number';
+        }
+      });
+
+       $('.tipso').tipso({
+        position: 'top',
+        background: '#000',
+        useTitle: false,
+        width: false,
+        maxWidth: 300,
+        tooltipHover: true,
+        content: function(){
+          return 'You can <a href="javascript:;">Change Location</a>';
+        }
+      });
+
+
+
+
+
+     });
+
+   </script>

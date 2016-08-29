@@ -7,10 +7,104 @@ body, html {
   font-family: 'Lato', sans-serif; }
 
 .navbar {
-  margin-top: 15px; }
+  margin-top: 0px; }
   .navbar input[type="text"] {
     border: 2px solid #4B4B4B;
     width: 100%; }
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 10px; }
+
+.searchCityPanel {
+  padding: 0px 0 20px 0;
+  background: #ccc; }
+
+.attorneyProfilePic {
+  text-align: center; }
+  .attorneyProfilePic img {
+    padding: 10px;
+    background: #ccc;
+    height: 220px;
+    margin: 0 auto;
+    text-align: center; }
+
+a .fa-arrow-circle-left {
+  margin-right: 12px;
+  color: #000; }
+
+.inUs {
+  margin-left: 20px; }
+
+.profileIntoActions {
+  margin-left: 5px; }
+
+.topPanel {
+  background: #E1E1E1;
+  padding: 20px;
+  margin-bottom: 5px; }
+
+.topPanel2 {
+  background: #E1E1E1;
+  padding: 20px;
+  margin-bottom: 5px;
+  margin-top: 30px; }
+
+.sentNow {
+  margin-top: 30px; }
+
+.introTextTop h2 {
+  padding: 0 20px 5px 20px !important; }
+
+.introTextTop h5 {
+  padding: 0 20px 0px 20px;
+  font-size: 1em; }
+
+.sendDis {
+  background: #ccc !important; }
+
+.fa-envelope {
+  margin-right: 7px; }
+
+.introForm label {
+  display: block; }
+
+.introForm .introAction button {
+  display: block;
+  margin: 20px 10px 0 0; }
+
+.introForm textarea {
+  width: 100%;
+  padding: 3px 10px;
+  font-size: 1.2em; }
+
+.introForm input {
+  padding: 3px 10px;
+  font-size: 1.2em;
+  width: 100%;
+  margin-bottom: 15px; }
+
+ul.featuredlist {
+  list-style: none;
+  padding: 22px 0 0px 0;
+  margin: 0px 0%;
+  display: inline-block; }
+  ul.featuredlist li {
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 15px 0 15px 0;
+    display: inline-block; }
+  ul.featuredlist h2 {
+    padding: 0;
+    margin: 0; }
+  ul.featuredlist p {
+    font-size: 1.2em !important;
+    line-height: 25px !important; }
+
+.titleFilter {
+  font-size: .5em;
+  float: right;
+  margin: 10px 0 0 0; }
 
 .closeit a {
   margin: 15px 15px 0px 15px !important;
@@ -21,6 +115,7 @@ body, html {
   padding: 20px;
   background-image: url("../img/woman.jpg");
   background-size: cover;
+  margin: 60px 0 0 0;
   background-position: center center;
   height: 400px; }
   .hero .introText {
@@ -30,16 +125,19 @@ body, html {
     font-size: 5em;
     font-family: 'Lato', sans-serif;
     font-weight: 300; }
-  .hero .introSearchLaw {
-    padding: 20px 20px 0 20px; }
-    .hero .introSearchLaw input[type="text"] {
-      padding: 7px 7px 7px 12px;
-      font-size: 1.3em;
-      font-weight: 300; }
-    .hero .introSearchLaw .btn {
-      margin: -10px 0 0 20px;
-      background: #000;
-      border: none; }
+
+.introSearchLaw {
+  padding: 20px 20px 0 20px; }
+  .introSearchLaw input[type="text"] {
+    padding: 7px 7px 7px 12px;
+    font-size: 1.3em;
+    font-weight: 300; }
+  .introSearchLaw .btn {
+    margin: -10px 0 0 20px;
+    background: #000;
+    border: none; }
+  .introSearchLaw label {
+    display: block; }
 
 .showLawWrap {
   background: #E8E9E8;
@@ -146,6 +244,16 @@ footer {
   background: #000;
   margin-top: 15px;
   color: #fff; }
+
+.utl {
+  margin: 10px 10px 0 0; }
+  .utl .btn {
+    margin-right: 20px; }
+  .utl a {
+    margin: 5px 0 0 0; }
+
+#articleWrap {
+  padding-top: 50px; }
 
 #myModal .modal-body * {
   -webkit-box-sizing: border-box;
@@ -305,12 +413,48 @@ footer {
   .lawlocal .btn {
     margin-top: 10px; }
 
+a .upl {
+  position: relative;
+  font-size: .6em;
+  display: inline-block;
+  top: -5px;
+  margin-right: 10px;
+  color: #5A5A5A; }
+  a .upl:after {
+    content: "|";
+    margin-left: 10px; }
+
+.relateWrap h3 {
+  padding: 0px 30px 0px 30px; }
+
+.relateWrap .btn {
+  margin-top: 10px; }
+
+.relateWrap h4 {
+  padding: 0;
+  margin: 0;
+  font-size: 1.7em;
+  font-weight: 500;
+  line-height: 1.2em; }
+
+.relateWrap p {
+  margin-top: 10px; }
+
+.relateWrap .related {
+  padding: 20px 20px 20px 20px;
+  margin: 10px 10px 10px 10px;
+  background: #EDEDED;
+  height: 280px; }
+
 .articleBody {
-  padding: 20px 40px 40px 40px;
+  padding: 0px 00px 0px 0px;
   font-weight: 500; }
   .articleBody h1 {
     font-size: 3em;
     font-weight: 300; }
+  .articleBody h5 {
+    display: inline-block;
+    margin-left: 20px; }
   .articleBody p {
     margin-top: 20px;
     line-height: 35px;
@@ -346,7 +490,8 @@ footer {
       margin: 15px 0 0 0; }
 
 #slider {
-  background: #444444; }
+  background: #444444;
+  padding-top: 50px; }
   #slider ul {
     margin: 10px 0 0 0;
     padding: 10px;
@@ -419,6 +564,10 @@ input.empty {
 .tipso a {
   color: red !important; }
 
+.phone {
+  font-size: 1.3em;
+  margin: 4px 0 0 0; }
+
 .modal.in .modal-dialog {
   width: 80%; }
   .modal.in .modal-dialog .phone {
@@ -451,3 +600,69 @@ input.empty {
   .bioForm small {
     font-weight: 500;
     margin: 0 0 5px 0px; }
+
+.addressSec {
+  padding: 0px 50px 30px 50px; }
+  .addressSec p {
+    margin: 0;
+    padding: 0; }
+  .addressSec h3 {
+    margin: 10px 0 0px 0;
+    padding: 0; }
+  .addressSec small {
+    margin: 0;
+    padding: 0; }
+
+.maps {
+  display: block;
+  margin: 0px 0px 0px 0px !important; }
+
+.subArt {
+  padding: 0px 50px 50px 50px; }
+  .subArt a {
+    color: #000;
+    text-decoration: none; }
+    .subArt a:hover {
+      opacity: .5; }
+
+.cats {
+  padding: 0 30px; }
+
+.tags {
+  display: inline-block;
+  padding: 0;
+  margin: 20px 0 0 0; }
+  .tags ul {
+    margin: 0px 0 0 0;
+    padding: 0;
+    list-style: none; }
+    .tags ul li {
+      background: #ccc;
+      padding: 2px 20px;
+      color: #000;
+      border-radius: 2px;
+      display: inline-block;
+      margin-right: 0px !important;
+      margin-bottom: 5px; }
+      .tags ul li.active {
+        background: #5E5E5E; }
+        .tags ul li.active a {
+          color: #fff !important; }
+      .tags ul li a {
+        color: #000; }
+
+.pagination {
+  margin-left: 50px; }
+
+.askPanel {
+  display: none;
+  background: #E1E1E1;
+  margin-bottom: 10px;
+  padding: 20px;
+  margin-top: 50px; }
+
+.never {
+  margin-right: 25px; }
+
+.filter {
+  margin-bottom: 10px; }

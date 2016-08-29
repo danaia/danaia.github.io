@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default ">
+<nav class="navbar navbar-default  navbar-fixed-top ">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -7,106 +7,146 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-    </button>
-    <a class="navbar-brand" href="index.html">
-      <img src="img/logo.png" alt="">
-  </a>
-</div>
+      </button>
+      <a class="navbar-brand" href="index.html">
+        <img src="img/logo.png" alt="">
+      </a>
+    </div>
 
-<!-- Collect the nav links, forms, and other content for toggling -->
-<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-  <ul class="nav navbar-nav">
-    <li><a href="#" class="slideR" id="trigger"> <span class="fa fa-bars"></span> Explore <span class="sr-only">(current)</span></a></li>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="#" class="slideR" id="trigger"> <span class="fa fa-bars"></span> Menu <span class="sr-only">(current)</span></a></li>
 
-</ul>
-<form class="navbar-form navbar-left" role="search">
-    <div class="form-group">
-      <input type="text" class="form-control" placeholder="&#xF121;">
-  </div>
-  <button type="submit" class="btn btn-default">Search For Answers & Questions</button>
-  <button type="submit" class="btn btn-primary">Ask a Question</button>
-</form>
-<ul class="nav navbar-nav navbar-right">
+      </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="&#xF121;">
+        </div>
+        <button type="submit" class="btn btn-default">Search The Site</button>
 
-    <li class="dropdown">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Account <span class="caret"></span></a>
-      <ul class="dropdown-menu">
-        <li><a href="#">Profile</a></li>
-        <li><a href="#">Billing</a></li>
-        <li><a href="#">Personal Support</a></li>
-        <li role="separator" class="divider"></li>
-        <li><a href="#">Logout</a></li>
-    </ul>
-</li>
-</ul>
-</div><!-- /.navbar-collapse -->
-</div><!-- /.container-fluid -->
+      </form>
+      <div class="utl">
+        <a href="#" class='pull-right' >For Attorneys</a>
+        <button type="submit" class="btn btn-primary pull-right askit">Ask a Question</button>
+      </div>
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
 </nav>
 
 <div id="slider">
-    <div class="pull-right closeit"><a href="#">X</a></div>
-    <div class="clearfix"></div>
-    <ul>
-        <li class="active">
-            <a href="index.html">Home</a>
-        </li>
-        <li>
-            <a href="#">Resources</a>
-        </li>
-        <li>
-            <a href="#">Questions & Answers</a>
-        </li>
-        <li>
-            <a href="#">Find an Attorney</a>
-        </li>
+  <div class="pull-right closeit"><a href="#">X</a></div>
+  <div class="clearfix"></div>
+  <ul class="menuMain">
+    <li class="active">
+      <a href="index.html">Home</a>
+    </li>
+    <li>
+      <a href="#">Resources</a>
+    </li>
+    <li>
+      <a href="qa.html">Questions & Answers</a>
+    </li>
+    <li>
+      <a href="#">Find an Attorney</a>
+    </li>
 
-        <li>
-            <a href="#">About Us</a>
-        </li>
-        <li>
-            <a href="#">For Attorneys</a>
-        </li>
+    <li>
+      <a href="#">About Us</a>
+    </li>
+    <li>
+      <a href="#">For Attorneys</a>
+    </li>
 
-    </ul>
+  </ul>
 </div>
+<div class="clearfix"></div>
+<div class="askPanel">
 
+  <div class="row introTextTop">
+    <h2>Ask a Question</h2>
+    <h5>Any question is valid. consectetur adipisicing elit. Laudantium natus sint dicta accusantium, corporis. Eum expedita, rerum incidunt non saepe suscipit reiciendis ea molestiae? Sunt natus praesentium, officia quas nobis!</h5>
+    <hr>
+    <div class="col-md-6">
+      <div class="form-group introForm">
+        <label for="">Your Question</label>
+        <textarea name="" id="" cols="30" rows="4" placeholder="Example: When is the best time to make a will?"></textarea>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="form-group introForm" id="introPanels">
+        <label for="">First Name</label>
+        <input type="text">
+        <label for="">Email</label>
+        <input type="text">
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="form-group introForm">
+        <label for="">Last Name</label>
+        <input type="text">
+        <label for="">Phone</label>
+        <input type="text">
+        <div class="introAction">
+
+          <button class="pull-right btn btn-primary sendIntro ">Ask!</button>
+          <button class="pull-right btn cancelIntro">Cancel</button>
+
+        </div>
+      </div>
+    </div>
+    <span class="pull-right"><small>We never share or sell your information</small></span>
+  </div>
+
+</div>
 <script>
 
-    $( document ).ready(function() {
-        $('#slider').slideReveal({
-          trigger: $("#trigger")
+  $( document ).ready(function() {
+    $('#slider').slideReveal({
+      trigger: $("#trigger")
+    });
+
+    var slider = $('#slider').slideReveal();
+    var askPanel = $('.askPanel'); 
+
+
+
+    $('body').on("click",".closeit",function(e){
+
+     slider.slideReveal("hide");
+   });
+
+    $('body').on("click",".askit",function(e){
+
+     askPanel.slideToggle(200);
+   });
+
+      $('body').on("click",".cancelIntro",function(e){
+        e.preventDefault();
+        askPanel.slideUp(200);
+    
       });
 
-        var slider = $('#slider').slideReveal(); 
 
-
-       
-            $('body').on("click",".closeit",function(e){
-
-         slider.slideReveal("hide");
-            });
-
-
-
-
-        $(function() {
-          $('a[href*="#"]:not([href="#"])').click(function() {
-            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-              var target = $(this.hash);
-              target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-              if (target.length) {
-                $('html, body').animate({
-                  scrollTop: target.offset().top
-              }, 1000);
-                return false;
-            }
+    $(function() {
+      $('a[href*="#"]:not([href="#"])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html, body').animate({
+              scrollTop: target.offset().top
+            }, 1000);
+            return false;
+          }
         }
-    });
       });
-
-
     });
-    
-    
-    
+
+
+  });
+
+
+
 </script>

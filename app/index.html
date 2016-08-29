@@ -4,235 +4,237 @@
 
 <html>
 <head>
-    <title>ELA - POC</title>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <meta content="yes" name="apple-mobile-web-app-capable"/>
+  <title>ELA - POC</title>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="yes" name="apple-mobile-web-app-capable"/>
 
-    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="bower_components/PACE/themes/blue/pace-theme-minimal.css">
-    <link rel="stylesheet" href="bower_components/tipso/src/tipso.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,100,700,900' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="bower_components/PACE/themes/blue/pace-theme-minimal.css">
+  <link rel="stylesheet" href="bower_components/tipso/src/tipso.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,300,100,700,900' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 
 
 </head>
 <body>
-    <div class="container-fluid">
-        <div id="brandHeader"></div>
-        <div class="mainBody">
-            <div class="hero">
-                <div class="introText">
-                    <h1>Find Local Elder Law Assistance </h1>
-                </div>
-                <div class="introSearchLaw" id="showLaw">
-                    <span><input type="text" placeholder="Your ZIP Code" ></span><span>
-                    <a href="#showLaw" class="btn btn-lg btn-primary showLawAction">Find An Attorney</a></span>
-                </div>
-            </div>
-            <div id="">   
-                <div class='showLawWrap' style="display:none">
-                    <h3>Elder Lawyers in Your Area: <b>Rhode Island</b></h3>
-                    <p>
-                        <ul>
-                            <li>
-                                <h4>Jon Smith, Esq</h4>
-                                <small>general consul , medicade, home care</small>
-                            </li>
-                            <li>
-                                <h4>Jon Smith, Esq</h4>
-                                <small>general consul , medicade, home care</small>
-                            </li>
-                            <li>
-                                <h4>Jon Smith, Esq</h4>
-                                <small>general consul , medicade, home care</small>
-                            </li>
-                            <li>
-                                <h4>Jon Smith, Esq</h4>
-                                <small>general consul , medicade, home care</small>
-                            </li>
-                            <li>
-                       <h4>We Found 14 More!</h4>
-                                <a href="#" class="btn btn-sm btn-primary">View More</a>
-                            </li>
 
-                        </ul>
-                        <span class="clearfix"></span>
-                    </p>
-                </div>
-            </div> 
-            <div class="row sec2Home">
-                <div class="col-md-8">
-                    <h2>Key Long-Term Care and Estate Planning Resources</h2>
-                    <small>We have the Internet's largest collection of elder law resources.</small>
-                    <div class="row elaResources">
-                        <div class="col-md-4">
-                            <ul>
-                                <li><a href="#">Estate Planning</a></li>
-                                <li><a href="">Grandchildren</a></li>
-                                <li><a href="">Guardianship/Conservatorship</a></li>
-                                <li><a href="">Health Care Decisions</a></li>
-                                <li><a href="">Long-Term Care Insurance</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-4">
-                            <ul>
-                                <li><a href="">Medicaid Planning</a></li>
-                                <li><a href="">Medicaid Rules</a></li>
-                                <li><a href="">Medicare</a></li>
-                                <li><a href="">Retirement Planning</a></li>
-                                <li><a href="">Senior Living</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-4">
-                            <ul>
-                                <li><a href="">Social Security</a></li>
-                                <li><a href="">Special Needs Planning</a></li>
-                                <li><a href="">Veterans Planning</a></li>
-                                <li><a href="">Veterans Benefits</a></li>
-
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 popularQuestions">
-                    <span><small>POPULAR QUESTIONS</small></span>
-                    <span><a href="#" class="label label-primary pull-right">Ask A Question</a></span>
-
-                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                        <!-- Indicators -->
-                        <ol class="carousel-indicators">
-                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#myCarousel" data-slide-to="1"></li>
-                            <li data-target="#myCarousel" data-slide-to="2"></li>
-                            <li data-target="#myCarousel" data-slide-to="3"></li>
-                        </ol>
-
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner" role="listbox">
-                            <div class="item active">
-                                <h3><a href="">Does My Mother's Agent Under a Medical Power of Attorney Have Any Responsibility to Me?</a></h3>
-                                <p>
-                                    My mother is in a nursing home. Does the woman who is acting as an agent under my mother's medical power of attorney have any responsibility to my brother and me? She doesn't like us, and I am afraid she won't notify us if something happens to my mom. 
-                                </p>
-                            </div>
-
-                            <div class="item">
-                                <h3><a href="">Can Medicaid Pay for My Late Mother’s Nursing Home Bill?</a></h3>
-                                <p>
-                                    My mother is in a nursing home. Does the woman who is acting as an agent under my mother's medical power of attorney have any responsibility to my brother and me? She doesn't like us, and I am afraid she won't notify us if something happens to my mom. 
-                                </p>
-                            </div>
-
-                            <div class="item">
-                                <h3><a href="">Can I Add My Son's Name to His Life Insurance Policy?</a></h3>
-                                <p>
-                                    My mother is in a nursing home. Does the woman who is acting as an agent under my mother's medical power of attorney have any responsibility to my brother and me? She doesn't like us, and I am afraid she won't notify us if something happens to my mom. 
-                                </p>
-                            </div>
-
-                            <div class="item">
-                                <h3>Does My Mother's Agent Under a Medical Power of Attorney Have Any Responsibility to Me?</h3>
-                                <p>
-                                    My mother is in a nursing home. Does the woman who is acting as an agent under my mother's medical power of attorney have any responsibility to my brother and me? She doesn't like us, and I am afraid she won't notify us if something happens to my mom. 
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- Left and right controls -->
-                        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
-                    </div>
-
-
-                </div>
-            </div>
-            <div class=" row sec3Home">
-                <div class="col-md-12">
-                    <small>RECENT ARTICLE</small>
-                    <h2>Why Plan Your Estate?</h2>
-                    <p>The knowledge that we will eventually die is one of the things that seems to distinguish humans from other living beings. At the same time, no one likes to dwell on the prospect of his or her own death. But if you postpone planning for your demise until it is too late, you run the risk that your intended beneficiaries -- those you love the most -- may not receive what you would want them to receive whether due to extra administration costs, unnecessary taxes or squabbling among your heirs.</p>
-                    <a href="article.html" class="btn btn-primary btn-md">Read More</a>
-                    <a href="#" class="btn btn-primary btn-md">All Articles</a>
-                </div>
-            </div>
-
-            <div class=" row sec4Home">
-                <div class="col-md-4">
-                    <div class="bookWrap">
-                     <small>FREE RESOURCES</small>
-                     <h2>Elder Law Guide</h2>
-                     <div class="row">
-                        <div class="col-md-6">
-                            <img src="img/cover.png" alt="">
-                        </div>
-                        <div class="col-md-6">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam vero dolores tenetur dicta nesciunt.
-                            </p>
-                            <div class="btn btn-sm btn-primary pull-left">Download</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-8 " >
-                <small>TOP CITIES</small>
-                <h2>Professionals are available in your community </h2>
-                <small class="tag">We have organized a deep collection of community based legal solutions in many areas around the country.</small>
-                <div class="col-md-3">
-                    <ul>
-                        <li><a href="#">Pittsburgh, PA</a></li>
-                        <li><a href="">Baltimore, MD</a></li>
-                        <li><a href="">Boston, MA</a></li>
-                        <li><a href="">Charlotte, NC</a></li>
-                        <li><a href="">Raleigh, NC</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <ul>
-                        <li><a href="">Chicago, IL</a></li>
-                        <li><a href="">Cleveland, OH</a></li>
-                        <li><a href="">Dallas, TX </a></li>
-                        <li><a href="">Denver, CO</a></li>
-                        <li><a href="">Ft. Lauderdale, FL</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <ul>
-                        <li><a href="">Houston, TX</a></li>
-                        <li><a href="">Los Angeles, CA</a></li>
-                        <li><a href="">Louisville, KY </a></li>
-                        <li><a href="">Minneapolis, MN</a></li>
-
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <ul>
-                        <li><a href="">New York, NY</a></li>
-                        <li><a href="">Oakland, CA</a></li>
-                        <li><a href="">Philadelphia, PA</a></li>
-                        <li><a href="">Phoenix, AZ</a></li>
-
-                    </ul>
-                </div>
-
-            </div>
-
+  <div class="container-fluid">
+    <div id="brandHeader"></div>
+    <div class="mainBody">
+      <div class="hero">
+        <div class="introText">
+          <h1>Find Local Elder Law Assistance </h1>
         </div>
+        <div class="introSearchLaw" id="showLaw">
+          <span><input type="text" placeholder="City" ></span><span>
+          <span><input type="text" placeholder="State" ></span><span>
+          <a href="#showLaw" class="btn btn-lg btn-primary showLawAction">Find An Attorney</a></span>
+        </div>
+      </div>
+      <div id="">   
+        <div class='showLawWrap' style="display:none">
+          <h3>Elder Lawyers in Your Area: <b>Providence, RI</b></h3>
+          <p>
+            <ul>
+              <li>
+                <h4>Jon Smith, Esq</h4>
+                <small>general consul , medicade, home care</small>
+              </li>
+              <li>
+                <h4>Jon Smith, Esq</h4>
+                <small>general consul , medicade, home care</small>
+              </li>
+              <li>
+                <h4>Jon Smith, Esq</h4>
+                <small>general consul , medicade, home care</small>
+              </li>
+              <li>
+                <h4>Jon Smith, Esq</h4>
+                <small>general consul , medicade, home care</small>
+              </li>
+              <li>
+               <h4>14 More Attorneys in <br><b>Providence, RI</b></h4>
+               <a href="cities.html" class="btn btn-sm btn-primary">View More  </a>
+             </li>
+
+           </ul>
+           <span class="clearfix"></span>
+         </p>
+       </div>
+     </div> 
+     <div class="row sec2Home">
+      <div class="col-md-8">
+        <h2>Key Long-Term Care and Estate Planning Resources</h2>
+        <small>We have the Internet's largest collection of elder law resources.</small>
+        <div class="row elaResources">
+          <div class="col-md-4">
+            <ul>
+              <li><a href="#">Estate Planning</a></li>
+              <li><a href="">Grandchildren</a></li>
+              <li><a href="">Guardianship/Conservatorship</a></li>
+              <li><a href="">Health Care Decisions</a></li>
+              <li><a href="">Long-Term Care Insurance</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul>
+              <li><a href="">Medicaid Planning</a></li>
+              <li><a href="">Medicaid Rules</a></li>
+              <li><a href="">Medicare</a></li>
+              <li><a href="">Retirement Planning</a></li>
+              <li><a href="">Senior Living</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul>
+              <li><a href="">Social Security</a></li>
+              <li><a href="">Special Needs Planning</a></li>
+              <li><a href="">Veterans Planning</a></li>
+              <li><a href="">Veterans Benefits</a></li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 popularQuestions">
+        <span><small>POPULAR QUESTIONS</small></span>
+        <span><a href="#" class="label label-primary pull-right">View The Answer</a></span>
+
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <h3><a href="">Does My Mother's Agent Under a Medical Power of Attorney Have Any Responsibility to Me?</a></h3>
+              <p>
+                My mother is in a nursing home. Does the woman who is acting as an agent under my mother's medical power of attorney have any responsibility to my brother and me? She doesn't like us, and I am afraid she won't notify us if something happens to my mom. 
+              </p>
+            </div>
+
+            <div class="item">
+              <h3><a href="">Can Medicaid Pay for My Late Mother’s Nursing Home Bill?</a></h3>
+              <p>
+                My mother is in a nursing home. Does the woman who is acting as an agent under my mother's medical power of attorney have any responsibility to my brother and me? She doesn't like us, and I am afraid she won't notify us if something happens to my mom. 
+              </p>
+            </div>
+
+            <div class="item">
+              <h3><a href="">Can I Add My Son's Name to His Life Insurance Policy?</a></h3>
+              <p>
+                My mother is in a nursing home. Does the woman who is acting as an agent under my mother's medical power of attorney have any responsibility to my brother and me? She doesn't like us, and I am afraid she won't notify us if something happens to my mom. 
+              </p>
+            </div>
+
+            <div class="item">
+              <h3>Does My Mother's Agent Under a Medical Power of Attorney Have Any Responsibility to Me?</h3>
+              <p>
+                My mother is in a nursing home. Does the woman who is acting as an agent under my mother's medical power of attorney have any responsibility to my brother and me? She doesn't like us, and I am afraid she won't notify us if something happens to my mom. 
+              </p>
+            </div>
+          </div>
+
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+
+
+      </div>
+    </div>
+    <div class=" row sec3Home">
+      <div class="col-md-12">
+        <small>RECENT ARTICLE</small>
+        <h2>Why Plan Your Estate?</h2>
+        <p>The knowledge that we will eventually die is one of the things that seems to distinguish humans from other living beings. At the same time, no one likes to dwell on the prospect of his or her own death. But if you postpone planning for your demise until it is too late, you run the risk that your intended beneficiaries -- those you love the most -- may not receive what you would want them to receive whether due to extra administration costs, unnecessary taxes or squabbling among your heirs.</p>
+        <a href="article.html" class="btn btn-primary btn-md">Read More</a>
+        <a href="#" class="btn btn-primary btn-md">All Articles</a>
+      </div>
+    </div>
+
+    <div class=" row sec4Home">
+      <div class="col-md-4">
+        <div class="bookWrap">
+         <small>FREE RESOURCES</small>
+         <h2>Elder Law Guide</h2>
+         <div class="row">
+          <div class="col-md-6">
+            <img src="img/cover.png" alt="">
+          </div>
+          <div class="col-md-6">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam vero dolores tenetur dicta nesciunt.
+            </p>
+            <div class="btn btn-sm btn-primary pull-left">View Guide</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-8 " >
+      <small>TOP CITIES</small>
+      <h2>Professionals are available in your community </h2>
+      <small class="tag">We have organized a deep collection of community based legal solutions in many areas around the country.</small>
+      <div class="col-md-3">
+        <ul>
+          <li><a href="#">Pittsburgh, PA</a></li>
+          <li><a href="">Baltimore, MD</a></li>
+          <li><a href="">Boston, MA</a></li>
+          <li><a href="">Charlotte, NC</a></li>
+          <li><a href="">Raleigh, NC</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <ul>
+          <li><a href="">Chicago, IL</a></li>
+          <li><a href="">Cleveland, OH</a></li>
+          <li><a href="">Dallas, TX </a></li>
+          <li><a href="">Denver, CO</a></li>
+          <li><a href="">Ft. Lauderdale, FL</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <ul>
+          <li><a href="">Houston, TX</a></li>
+          <li><a href="">Los Angeles, CA</a></li>
+          <li><a href="">Louisville, KY </a></li>
+          <li><a href="">Minneapolis, MN</a></li>
+
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <ul>
+          <li><a href="">New York, NY</a></li>
+          <li><a href="">Oakland, CA</a></li>
+          <li><a href="">Philadelphia, PA</a></li>
+          <li><a href="">Phoenix, AZ</a></li>
+
+        </ul>
+      </div>
 
     </div>
 
-    <footer>
-        FOOTER
-    </footer>
+  </div>
+
+</div>
+
+<footer class="footerMain">
+  FOOTER
+</footer>
 </div>
 
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
@@ -253,34 +255,35 @@
 
 <script>
 
-    $(function() {
-        $('a[href*="#"]:not([href="#"])').click(function() {
-            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-                if (target.length) {
-                    $('html, body').animate({
-                        scrollTop: target.offset().top
-                    }, 1000);
-                    return false;
-                }
-            }
-        });
+  $(function() {
+    $('a[href*="#"]:not([href="#"])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html, body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
+      }
+    });
+  });
+
+
+  $( document ).ready(function() {
+
+
+    $('#brandHeader').load('p-brandHeader.html');
+    $( ".showLawAction" ).click(function() {
+      $(".showLawWrap").slideDown(200);
     });
 
 
-    $( document ).ready(function() {
 
 
-        $('#brandHeader').load('p-brandHeader.html');
-        $( ".showLawAction" ).click(function() {
-            $(".showLawWrap").slideDown(200);
-        });
+  });
 
 
-
-
-
-    });
 
 </script>
